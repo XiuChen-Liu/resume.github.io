@@ -1,0 +1,10 @@
+.head-bg{
+    background-color: #02558B;
+    height: 250px;
+}
+.head-word{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}

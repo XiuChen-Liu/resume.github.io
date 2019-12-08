@@ -1,10 +1,129 @@
-.head-bg{
-    background-color: #02558B;
-    height: 250px;
+/*header*/
+.bgcolor{
+    background-color: #A88F7B;
 }
-.head-word{
-    color: white;
+.head-bg{
+    background-color: #22252C;
+    height: 400px;
+    width: 1500px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.marginauto{
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.img{
+    width: 270px;
+    height: 360px; 
+    margin-top: 18px;
+    margin-left:100px;
+    border-radius: 30px;
+}
+.font01{
+    font-family: "微軟正黑體";
+    font-weight: bolder;
     font-size: 40px;
+    color:white;
+    margin-top: 30px;
+    
+}
+.font02{
+    font-family: "微軟正黑體";
+    font-size:20px;
+    color:white;
+}
+.font03{
+    font-family: 'Caveat', cursive;
+    font-size:35px;
     font-weight: bold;
-    text-align: center;
+    color:white;
+    margin-top: 50px;
+}
+/*body*/
+.body-bg{
+    width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.font04{
+    margin-top: 50px;
+    font-family: "微軟正黑體";
+    font-weight: bolder;
+    color:#22252C;
+}
+/*skill bar*/
+.bodyfont{
+  font-family: Helvetica, Arial, sans-serif;
+}
+.container{
+  width: 50%;
+  margin: 0 auto;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #22252C;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: #22252C;
+}
+.bar.back::before{
+  background-color: #22252C;
+}
+
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+.bar.expert::before{
+  width: calc(80% - 10px);
 }
